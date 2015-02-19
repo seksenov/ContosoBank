@@ -12,7 +12,7 @@
 
     .smallListIconTextItem img.smallListIconTextItem-Image 
     {
-        width: 60px;
+        width: 150px;
         height: 60px;
         margin: 5px;
         margin-right:20px;
@@ -21,6 +21,7 @@
     .smallListIconTextItem .smallListIconTextItem-Detail
     {
         margin: 5px;
+        width: 200px;
     }
 
 .headerFooterPlaceholder {
@@ -40,10 +41,10 @@
 }
 
 /* Override the background color for even/odd win-containers */
-.listView.stripes .win-container.win-container-odd {
+.listView .win-container.win-container-odd {
     background-color: #777;
 }
 
-.listView.stripes .win-container.win-container-even {
+.listView .win-container.win-container-even {
     background-color: #444;
 }
