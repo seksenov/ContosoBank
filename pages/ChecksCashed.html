@@ -2,7 +2,6 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <script src="..\js\WinJS.js"></script>
-    <script src="..\js\default.js"></script>
     <script src="..\js\checkData.js"></script>
     <link href="..\css\ui-dark.css" rel="stylesheet" />
     <link href="..\css\default.css" rel="stylesheet" />
@@ -48,14 +47,14 @@
         </div>
     </div>
       
-      <div class="listView win-selectionstylefilled"
+      <div id="listview" class="listView win-selectionstylefilled"
            data-win-control="WinJS.UI.ListView"
            data-win-options="{
                   itemDataSource: CheckData.ListView.data.dataSource,
                   itemTemplate: select('.smallListIconTextTemplate'),
                   header: select('.header'),
                   itemsReorderable: true,
-                  onItemInvoked: CheckData.ListView.showChecksFlyout,
+                  oniteminvoked: CheckData.ListView.showChecksFlyout,
                   layout: { type: WinJS.UI.ListLayout }
       }">
       </div>

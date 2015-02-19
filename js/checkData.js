@@ -5,12 +5,13 @@ var checks = [
 
 //Show the flyout
 function showChecksFlyout(eventInfo) {
-    var image = document.getElementById(eventInfo.detail.itemIndex);
+    var listview = eventInfo.srcElement.WinControl;
+    var image = listview.elementFromIndex(eventInfo.detail.itemIndex);
     document.getElementById("checkFlyout").winControl.show(image);
 }
 
 WinJS.Namespace.define("CheckData.ListView", {
     data: new WinJS.Binding.List(checks),    
-    showChecksFlyout: showChecksFlyout
+    showChecksFlyout: WinJS.Utilities.markSupportedForProcessing(showChecksFlyout)
 });
 WinJS.UI.processAll();
