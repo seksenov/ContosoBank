@@ -7,7 +7,7 @@
     <link href="css\default.css" rel="stylesheet" />
 </head>
 <body>
-    <div>
+    <div style="height: 100%">
         <div class="splitView" data-win-control="WinJS.UI.SplitView" id="rootSplitView">
             <!-- Pane area -->
             <div>
@@ -17,9 +17,9 @@
                 </div>
 
                 <div class="nav-commands">
-                    <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'Home', icon: 'home'}"></div>
-                    <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'Favorite', icon: 'favorite'}"></div>
-                    <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'Settings', icon: 'settings'}"></div>
+                    <a onclick="loadFragment('pages/AccountBalances.html')">Account Balance</a>
+                    <a onclick="loadFragment('pages/ChecksCashed.html')">Checks</a>
+                    <a onclick="loadFragment('pages/BillPay.html')">Bill Pay</a>
                 </div>
             </div>
 
