@@ -4,7 +4,6 @@
 
 /*SplitView pane show button style*/
 .win-splitview-button {
-    background:url('images/hamburgerDark.png');
     display: inline-block;
     float:left;
     width: 48px;

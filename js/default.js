@@ -11,6 +11,10 @@ function loadFragment(fragmentDir) {
     });
 }
 
+function togglePane() {
+    splitView.paneHidden = !splitView.paneHidden;
+}
+
 /* Responsive Design Config
 * 1366+ px wide:
 *   - SplitView: Inline mode, peek pane 48px
@@ -38,7 +42,6 @@ function onResize() {
         newMode = WidthMode.small;
     }
 
-    var splitView = document.getElementById("rootSplitView").winControl;
     if (mode !== newMode) {
         splitView.hiddenDisplayMode = newMode === WidthMode.small ?
             WinJS.UI.SplitView.HiddenDisplayMode.none :

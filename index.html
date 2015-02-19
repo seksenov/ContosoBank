@@ -12,14 +12,14 @@
             <!-- Pane area -->
             <div>
                 <div class="header">
-                    <div class="win-splitview-button" data-win-bind="onclick: togglePane"></div>
+                    <div class="win-splitview-button" style="background-image: url('images/hamburgerDark.png')" onclick="togglePane()"></div>
                     <div class="title">SplitView Pane area</div>
                 </div>
 
                 <div class="nav-commands">
-                    <a onclick="loadFragment('pages/AccountBalances.html')">Account Balance</a>
-                    <a onclick="loadFragment('pages/ChecksCashed.html')">Checks</a>
-                    <a onclick="loadFragment('pages/BillPay.html')">Bill Pay</a>
+                    <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'Account Balance', icon: 'home'}" onclick="loadFragment('pages/AccountBalances.html')"></div>
+                    <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'Checks', icon: 'favorite'}" onclick="loadFragment('pages/ChecksCashed.html')"></div>
+                    <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'Bill Pay', icon: 'settings'}" onclick="loadFragment('pages/BillPay.html')"></div>
                 </div>
             </div>
         </div> 
