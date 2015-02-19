@@ -1,6 +1,7 @@
 var splitView;
 WinJS.UI.processAll().then(function () {
     splitView = document.getElementById("rootSplitView").winControl;
+    loadFragment("pages/AccountBalances.html");
 });
 
 function loadFragment(fragmentDir) {
