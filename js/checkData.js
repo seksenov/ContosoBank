@@ -5,9 +5,11 @@ var checks = [
 
 //Show the flyout
 function showChecksFlyout(eventInfo) {
-    var listview = eventInfo.srcElement.WinControl;
-    var image = listview.elementFromIndex(eventInfo.detail.itemIndex);
-    document.getElementById("checkFlyout").winControl.show(image);
+    var image = eventInfo.srcElement;
+    document.getElementById("checkFlyoutImg").src = checks[eventInfo.detail.itemIndex].photo;
+    setTimeout(function () {
+      document.getElementById("checkFlyout").winControl.show(image);
+    });
 }
 
 WinJS.Namespace.define("CheckData.ListView", {

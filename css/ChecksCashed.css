@@ -49,8 +49,14 @@
     background-color: #444;
 }
 
+.checkFlyout
+{
+    max-width: 800px;
+    height: 300px;
+}
+
 .checkFlyout-Image
 {
-    width: 300px;
-    height: 500px;
+    width: 600px;
+    height: 300px;
 }
