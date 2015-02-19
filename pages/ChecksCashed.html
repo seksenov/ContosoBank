@@ -10,6 +10,10 @@
 </head>
 <body>
   <div>
+    <div id="checkFlyout" data-win-control="WinJS.UI.Flyout" aria-label="{Check flyout}">
+        <h4>Flyout!!</h4>
+    </div>
+
       <div class="smallListIconTextTemplate" data-win-control="WinJS.Binding.Template" style="display: none">
           <div class="smallListIconTextItem">
               <div class="smallListIconTextItem-Detail">
@@ -51,6 +55,7 @@
                   itemTemplate: select('.smallListIconTextTemplate'),
                   header: select('.header'),
                   itemsReorderable: true,
+                  onItemInvoked: CheckData.ListView.showChecksFlyout,
                   layout: { type: WinJS.UI.ListLayout }
       }">
       </div>

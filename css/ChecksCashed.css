@@ -48,3 +48,9 @@
 .listView .win-container.win-container-even {
     background-color: #444;
 }
+
+.checkFlyout-Image
+{
+    width: 300px;
+    height: 500px;
+}
