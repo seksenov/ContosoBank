@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <script src="js\WinJS.js"></script>
+    <script src="js\default.js"></script>
+    <link href="css\ui-dark.css" rel="stylesheet" />
+    <link href="css\default.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <div class="splitView" data-win-control="WinJS.UI.SplitView">
+            <!-- Pane area -->
+            <div>
+                <div class="header">
+                    <div class="win-splitview-button" data-win-bind="onclick: togglePane"></div>
+                    <div class="title">SplitView Pane area</div>
+                </div>
+
+                <div class="nav-commands">
+                    <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'Home', icon: 'home'}"></div>
+                    <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'Favorite', icon: 'favorite'}"></div>
+                    <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'Settings', icon: 'settings'}"></div>
+                </div>
+            </div>
+
+            <!-- Content area -->
+            <div class="contenttext"><h2>SplitView Content area</h2> </div>
+        </div> 
+    </div>
+</body>

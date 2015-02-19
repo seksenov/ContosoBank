@@ -1,0 +1,1 @@
+WinJS.UI.processAll();
