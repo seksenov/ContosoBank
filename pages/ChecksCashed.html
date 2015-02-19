@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <script src="..\js\WinJS.js"></script>
+    <script src="..\js\default.js"></script>
+    <script src="..\js\checkData.js"></script>
+    <link href="..\css\ui-dark.css" rel="stylesheet" />
+    <link href="..\css\default.css" rel="stylesheet" />
+    <link href="..\css\ChecksCashed.css" rel="stylesheet" />
+</head>
+<body>
+  <div>
+      <div class="smallListIconTextTemplate" data-win-control="WinJS.Binding.Template" style="display: none">
+          <div class="smallListIconTextItem">
+              <div class="smallListIconTextItem-Detail">
+                  <h4 data-win-bind="textContent: checkNumber"></h4>
+              </div>
+              <div class="smallListIconTextItem-Detail">
+                  <h4 data-win-bind="textContent: amount"></h4>
+              </div>
+              <div class="smallListIconTextItem-Detail">
+                  <h4 data-win-bind="textContent: date"></h4>
+              </div>
+              <img src="#" class="smallListIconTextItem-Image" data-win-bind="src: photo" draggable="false" />
+          </div>
+      </div>
+      
+      <div class="headerFooterPlaceholder">
+        <div class="header">
+            <div class="smallListIconTextItem-Detail">
+                <h4>Check Number</h4>
+                <h4>Amount</h4>
+                <h4>Date</h4>
+                <h4>Photo</h4>
+            </div>
+        </div>
+    </div>
+      
+      <div id="listView"
+           class="win-selectionstylefilled"
+           data-win-control="WinJS.UI.ListView"
+           data-win-options="{
+                  itemDataSource: checks,
+                  itemTemplate: select('.smallListIconTextTemplate'),
+                  header: select('.header'),
+                  itemsReorderable: true,
+                  layout: { type: WinJS.UI.ListLayout }
+      }">
+      </div>
+  </div>
+</body>
